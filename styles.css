@@ -154,6 +154,36 @@ section::before {
   border-radius: 48%;
 }
 
+section#resume h2 {
+  text-align: center;
+}
+
+img {
+  width: 30%;
+  height: auto;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#resume p{
+  margin-top: 10px;
+}
+
 section h2 {
   text-align: center;
   font-size: 2em;
@@ -163,17 +193,36 @@ section h2 {
 }
 
 section h2::after {
-  right: -210px; /* Adjust as needed */
-}
-
-section h2::after {
   content: '';
   position: absolute;
   top: 45%;
-  width: 200px; /* Adjust the length of the line as needed */
-  height: 3px; /* Adjust the thickness of the line as needed */
-  background: var(--primary-color); /* Line color */
+  width: 200px; 
+  height: 3px; 
+  background: var(--primary-color); 
   transform: translateY(-50%);
+  right: -210px;
+}
+
+section#resume h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 200px; 
+  height: 2px; 
+  background: var(--primary-color); 
+  transform: translateX(-120%) translateY(-50%); 
+}
+
+section#resume h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 200px; 
+  height: 2px; 
+  background: var(--primary-color); 
+  transform: translateX(120%) translateY(-50%); 
 }
 
 #contact a {
@@ -198,7 +247,7 @@ footer {
   height: 60px;
 }
 
-footer p{
+footer p {
   color: rgb(158, 157, 157);
 }
 
@@ -230,7 +279,7 @@ footer p{
 
 :root {
   --primary-color: #39829e;
-  --secondary-color: #ff6f61; 
+  --secondary-color: #ff6f61;
   --text-color: #333;
   --background-color: #f4f4f4;
   --header-footer-color: #000000;
