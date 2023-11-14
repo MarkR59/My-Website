@@ -154,11 +154,7 @@ section::before {
   border-radius: 48%;
 }
 
-section#resume h2 {
-  text-align: center;
-}
-
-img {
+#resume img {
   width: 30%;
   height: auto;
   border-radius: 4px;
@@ -166,7 +162,33 @@ img {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.resume-contact {
+  display: flex;
+}
+
+#resume {
+  flex-grow: 1;
+}
+
+#contact {
+  flex-grow: 1;
+}
+
+.contact-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
 .resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,9 +200,10 @@ img {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  font-size: 1.2em;
 }
 
-#resume p{
+#resume p {
   margin-top: 10px;
 }
 
@@ -196,9 +219,9 @@ section h2::after {
   content: '';
   position: absolute;
   top: 45%;
-  width: 200px; 
-  height: 3px; 
-  background: var(--primary-color); 
+  width: 200px;
+  height: 3px;
+  background: var(--primary-color);
   transform: translateY(-50%);
   right: -210px;
 }
@@ -208,10 +231,10 @@ section#resume h2::before {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 200px; 
-  height: 2px; 
-  background: var(--primary-color); 
-  transform: translateX(-120%) translateY(-50%); 
+  width: 200px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: translateX(-120%) translateY(-50%);
 }
 
 section#resume h2::after {
@@ -219,10 +242,32 @@ section#resume h2::after {
   position: absolute;
   right: 0;
   top: 50%;
-  width: 200px; 
-  height: 2px; 
-  background: var(--primary-color); 
-  transform: translateX(120%) translateY(-50%); 
+  width: 200px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: translateX(120%) translateY(-50%);
+}
+
+section#contact h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: translateX(-120%) translateY(-50%);
+}
+
+section#contact h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+  transform: translateX(120%) translateY(-50%);
 }
 
 #contact a {
