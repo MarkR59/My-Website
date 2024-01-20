@@ -162,6 +162,19 @@ section::before {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+#portfolio img {
+  width: 30%;
+  height: auto;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.port-pics {
+  display: flex;
+  flex-direction: column;
+}
+
 .resume-contact {
   display: flex;
 }
